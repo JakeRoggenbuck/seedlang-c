@@ -66,3 +66,51 @@ int main() {
 
     return 0;
 }
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+
+    char buffer[256];
+    const char *self = "?";
+
+    for (;;) {
+
+        char *s = fgets(buffer, sizeof(buffer), stdin);
+
+        if (s == NULL) {
+            return 0;
+        }
+
+        while (*s) {
+            if (*s == 'z') {
+                int n = strlen(self);
+                for (int i = 0; i < n; i++) {
+                    if (self[i] == 63) {
+                        for (int j = 0; j < n; j++) {
+                            switch (self[j]) {
+                            case '\n':
+                                printf("\\n");
+                                break;
+                            case '"':
+                                printf("\\\"");
+                                break;
+                            case '\\':
+                                printf("\\\\");
+                                break;
+                            default:
+                                printf("%c", self[j]);
+                            }
+                        }
+                    } else {
+                        printf("%c", self[i]);
+                    }
+                }
+                printf("%s", self);
+            }
+            s++;
+        }
+    }
+
+    return 0;
+}
