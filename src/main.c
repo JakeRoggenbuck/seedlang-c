@@ -23,8 +23,8 @@ int main() {
         "printf(\"%c\", self[j]);\n                            }\n             "
         "           }\n                    } else {\n                        "
         "printf(\"%c\", self[i]);\n                    }\n                }\n  "
-        "                          }\n            "
-        "s++;\n        }\n    }\n\n    return 0;\n}\n";
+        "                          }\n            s++;\n        }\n    }\n\n   "
+        " return 0;\n}\n";
 
     for (;;) {
 
