@@ -4,6 +4,8 @@ The smallest self hosted language.
 
 ## Build
 
+I use [Tsoding](https://github.com/tsoding/)'s [no build](https://github.com/tsoding/nob.h/) header file.
+
 ```sh
 cc -o nob nob.c
 ```
