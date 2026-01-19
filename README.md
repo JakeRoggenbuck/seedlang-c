@@ -1,5 +1,7 @@
 # seedlang-c
 
+The smallest self hosted language.
+
 ## Build
 
 ```sh
@@ -33,3 +35,11 @@ Finally, test that x1.c and x2.c are the same:
 ```
 diff x1.c x2.c
 ```
+
+x1.c (and x2.c) will be the same as main.c too.
+
+## About
+
+I followed along with this video from Tsoding:
+
+https://www.youtube.com/watch?v=QGm-d5Ch5JM
