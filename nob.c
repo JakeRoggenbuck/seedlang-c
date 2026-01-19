@@ -44,7 +44,7 @@ int main(int argc, char **argv)
     // command line that you want to execute.
     Nob_Cmd cmd = {0};
 
-    nob_cmd_append(&cmd, "cc", "-Wall", "-Wextra", "-o", BUILD_FOLDER"z", SRC_FOLDER"main.c");
+    nob_cmd_append(&cmd, "cc", "-Wall", "-Wextra", "-o", BUILD_FOLDER"x", SRC_FOLDER"main.c");
 
     // Let's execute the command.
     if (!nob_cmd_run(&cmd)) return 1;
